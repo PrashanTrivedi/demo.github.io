@@ -15,8 +15,8 @@ const mySidebar = `
     <aside class="sidebar">
         <img src="profile.jpg" alt="P. N. Karthik Photo" class="profile-photo">
         <div class="profile-header">
-            <h1>P. N. Karthik</h1>
-            <p>Assistant Professor, IIT Hyderabad</p>
+            <h1>Prashant Trivedi</h1>
+            <p>Assistant Professor, BITS Pilani, Rajasthan</p>
         </div>
         
         <h3>Connect</h3>
