@@ -1,0 +1,34 @@
+// 1. Define the Header HTML
+const myHeader = `
+    <header>
+        <nav>
+            <a href="index.html">Bio</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="index.html#news">News</a>
+        </nav>
+    </header>
+`;
+
+// 2. Define the Sidebar HTML
+const mySidebar = `
+    <aside class="sidebar">
+        <img src="profile.jpg" alt="P. N. Karthik Photo" class="profile-photo">
+        <div class="profile-header">
+            <h1>P. N. Karthik</h1>
+            <p>Assistant Professor, IIT Hyderabad</p>
+        </div>
+        
+        <h3>Connect</h3>
+        <p>704/A, Academic Block C</p>
+        <p><a href="mailto:someone@example.com">Email Me</a></p>
+        <p><a href="#">My LinkedIn</a></p>
+        <p><a href="#">My Twitter</a></p>
+        <p><a href="#">My Google Scholar</a></p>
+        <p><a href="#">My Curriculum Vitae</a></p>
+    </aside>
+`;
+
+// 3. Inject them into the page
+document.getElementById("header-placeholder").innerHTML = myHeader;
+document.getElementById("sidebar-placeholder").innerHTML = mySidebar;
