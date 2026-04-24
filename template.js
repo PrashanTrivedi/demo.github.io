@@ -20,7 +20,11 @@ const mySidebar = `
         </div>
         
         <h3>Connect</h3>
-        <p>704/A, Academic Block C</p>
+        <p>6121-V New Academic Block
+
+        Department of Computer Science and Information System
+        
+        </p>
         <p><a href="mailto:someone@example.com">Email Me</a></p>
         <p><a href="#">My LinkedIn</a></p>
         <p><a href="#">My Twitter</a></p>
