@@ -1,12 +1,89 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P. N. Karthik - Home</title>
-    
+    <title>Prashant Trivedi - Home</title>
     <style>
-        /* (Keep the exact same CSS code you already have) */
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff;
+        }
+        header {
+            background: #f4f4f4;
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            max-width: 600px; 
+            margin: 0 auto;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            color: #003d82;
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .sidebar {
+            flex: 1;
+            max-width: 280px;
+            background: #fafafa;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            position: sticky;
+            top: 80px; 
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px auto;
+            display: block; 
+            border: 3px solid #ddd;
+        }
+        .profile-header {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            text-align: center;
+        }
+        .profile-header h1 { margin: 0 0 5px 0; font-size: 1.8rem; color: #222; }
+        .profile-header p { margin: 0; font-size: 0.95rem; color: #666; font-style: italic; }
+        .sidebar h3 { margin-top: 0; color: #222; }
+        .sidebar p { margin: 10px 0; font-size: 0.95rem; }
+        .main-content { flex: 2; }
+        section { margin-bottom: 50px; scroll-margin-top: 70px; }
+        section h2 { border-bottom: 2px solid #0056b3; padding-bottom: 8px; color: #222; margin-top: 0; }
+        .news-item { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; }
+        .date { font-weight: bold; color: #0056b3; margin-bottom: 5px; }
+        .footer { text-align: center; padding: 20px; margin-top: 40px; background: #222; color: #fff; font-size: 0.9rem; }
+        a { color: #0056b3; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -18,40 +95,42 @@
         <div id="sidebar-placeholder"></div>
 
         <main class="main-content">
+            
             <section id="bio">
                 <h2>About Me</h2>
-                <p>I am an Assistant Professor in the Department of Computer Science and Information Systems at the BITS Pilani, Pilani Campus Rajasthan. Prior to this, I was Assistant Professor in the
+                <p>I am an Assistant Professor in the Department of Computer Science and Information Systems at BITS Pilani, Pilani Campus. Prior to this, I was a Post-Doctoral Scholar in the College of Engineering and Computer Science at the University of Central Florida, advised by Dr. Amrit Singh Bedi.</p>
                 
-                Computer Science department. I was a Postdoctoral scholar at University of Central Florida, USA where I worked alongside Prof. Amrit Singh Bedi. Prior to joining UCF, I worked at One Network Enterprises
-                    
-                India Private Limited as ML Scientist. I obtained the Ph.D. and Master of Science dual degree from the Industrial Engineering and Operations Research at the Indian Institute of Technology (IIT) Bombay, 
-                    
-                where I was fortunate to be advised by Prof. N. Hemachandra.</p>
+                <p>I obtained my Ph.D. from the Department of Industrial Engineering and Operations Research (IE&OR) at the Indian Institute of Technology (IIT) Bombay, under the supervision of Prof. N. Hemachandra. My thesis focused on Multi-Agent Reinforcement Learning and Decision Making, for which I received the IEOR Alumnus Endowment Excellence in Doctoral Dissertation Award.</p>
                 
-                <p> I hold a Bachelor of Science (Hons.) degree in Mathematics from Banaras Hindu University, Varanasi.</p>
-                
-                <p><em>Internship requests from students outside BITS Pilani are considered only if accompanied by a recommendation from a known academic acquaintance (such as a colleague or collaborator, either within or outside BITS). I may not respond to unsolicited requests for internships.</em></p>
-                
-                <p>In addition to my academic work, I am passionate about mentoring the next generation of researchers. I frequently participate in workshops and seminars aimed at bridging the gap between theoretical machine learning and practical, deployable AI systems.</p>
+                <p><em>Internship requests are considered only if accompanied by a recommendation from a known academic acquaintance. I may not respond to unsolicited requests for internships.</em></p>
             </section>
-            
-        
+
             <section id="news">
-                <h2>News (Archived)</h2>
+                <h2>News & Announcements</h2>
                 
                 <div class="news-item">
-                    <p class="date">15 Apr 2026</p>
-                    <p>Hosted Nihesh Rathod, Data Scientist, Strand Life Sciences (Bengaluru). Nihesh delivered an engaging talk on the topic "Whispers of Cancer: Listening to Early Signals of Cancer Through Machine Learning." Many thanks to Nihesh for accepting the invitation and visiting IIT Hyderabad.</p>
+                    <p class="date">Jan 2026</p>
+                    <p>Joined BITS Pilani, Pilani Campus as an Assistant Professor in the Department of Computer Science and Information Systems (CS & IS).</p>
                 </div>
 
                 <div class="news-item">
-                    <p class="date">11 Apr 2026</p>
-                    <p>Honored to receive the ANRF Prime Minister Early Career Research Grant (PMECRG). Immensely grateful to ANRF for the kind support. Look forward to the opportunities this grant will bring.</p>
+                    <p class="date">Dec 2025</p>
+                    <p>Delivered an invited talk on "Sample Complexity of Diffusion Model Training Without Empirical Risk Minimizer Access" at Ashoka University, Sonipat, Haryana.</p>
                 </div>
 
                 <div class="news-item">
-                    <p class="date">08 Apr 2026</p>
-                    <p>Hosted Karthikeyan Shanmugam, Research Scientist, Google DeepMind India (Bengaluru). Karthikeyan delivered an engaging talk on the topic "Algorithms for Fine Tuning Diffusion Models through Rewards." Many thanks to Karthikeyan for accepting the invitation and visiting IIT Hyderabad.</p>
+                    <p class="date">Nov 2025</p>
+                    <p>Presented "Regret Lower Bounds for Decentralized Multi-Agent Reinforcement Learning Algorithms" at ConfAI, Plaksha University, Mohali, Punjab.</p>
+                </div>
+
+                <div class="news-item">
+                    <p class="date">Dec 2025</p>
+                    <p>Paper titled "Regret Lower Bounds for Decentralized Multi-Agent Stochastic Shortest Path Problems" accepted at the Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS) 2025 (CORE A*).</p>
+                </div>
+
+                <div class="news-item">
+                    <p class="date">Feb 2025</p>
+                    <p>Paper titled "Align-Pro: A Principled Approach to Prompt Optimization for LLM Alignment" accepted at the 39th Annual AAAI Conference on Artificial Intelligence 2025 (CORE A*).</p>
                 </div>
 
             </section>
@@ -59,8 +138,10 @@
     </div>
 
     <footer class="footer">
-        <p>Credits: Srividya B V | &copy; 2026 Copyright: P. N. Karthik</p>
+        <p>&copy; 2026 Copyright: Prashant Trivedi</p>
     </footer>
+
+    <script src="template.js"></script>
 
 </body>
 </html>
