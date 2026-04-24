@@ -45,7 +45,7 @@
             padding: 0 20px;
             display: flex;
             gap: 40px;
-            align-items: flex-start; /* Important for sticky to work properly */
+            align-items: flex-start;
         }
         
         .sidebar {
@@ -55,13 +55,10 @@
             padding: 25px;
             border-radius: 8px;
             border: 1px solid #eee;
-            
-            /* THESE TWO LINES MAKE THE SIDEBAR STICKY */
             position: sticky;
             top: 80px; 
         }
 
-        /* Profile photo styling */
         .profile-photo {
             width: 150px;
             height: 150px;
@@ -87,46 +84,20 @@
         .main-content { flex: 2; }
         section { margin-bottom: 50px; scroll-margin-top: 70px; }
         section h2 { border-bottom: 2px solid #0056b3; padding-bottom: 8px; color: #222; margin-top: 0; }
+        .news-item { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; }
+        .date { font-weight: bold; color: #0056b3; margin-bottom: 5px; }
         .footer { text-align: center; padding: 20px; margin-top: 40px; background: #222; color: #fff; font-size: 0.9rem; }
         a { color: #0056b3; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        
-        /* New styles specific to the research page */
-        .publication { margin-bottom: 25px; }
-        .pub-title { font-weight: bold; font-size: 1.1rem; margin-bottom: 5px;}
-        .pub-authors { color: #444; margin-bottom: 5px; font-style: italic;}
-        .pub-venue { color: #0056b3; font-weight: bold;}
     </style>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <a href="index.html">Bio</a>
-            <a href="research.html">Research</a>
-            <a href="teaching.html">Teaching</a>
-            <a href="index.html#news">News</a>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <div class="container">
-        <aside class="sidebar">
-            
-            <img src="profile-pic.jpg" alt="P. N. Karthik Photo" class="profile-photo">
-
-            <div class="profile-header">
-                <h1>P. N. Karthik</h1>
-                <p>Assistant Professor, IIT Hyderabad</p>
-            </div>
-            
-            <h3>Connect</h3>
-            <p>704/A, Academic Block C</p>
-            <p><a href="mailto:someone@example.com">Email Me</a></p>
-            <p><a href="#">My LinkedIn</a></p>
-            <p><a href="#">My Twitter</a></p>
-            <p><a href="#">My Google Scholar</a></p>
-            <p><a href="#">My Curriculum Vitae</a></p>
-        </aside>
+        
+        <div id="sidebar-placeholder"></div>
 
         <main class="main-content">
             <section id="teaching-overview">
@@ -156,8 +127,10 @@
     </div>
 
     <footer class="footer">
-        <p>Credits: Srividya B V | &copy; 2026 Copyright: P. N. Karthik</p>
+        <p>&copy; 2026 Copyright: Prashant Trivedi</p>
     </footer>
+
+    <script src="template.js"></script>
 
 </body>
 </html>
