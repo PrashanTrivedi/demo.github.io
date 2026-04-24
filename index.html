@@ -5,83 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P. N. Karthik</title>
     <style>
+        /* This makes the page glide smoothly when clicking navigation links */
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             color: #333;
+            background-color: #fff;
         }
+        
+        /* Slimmed down top header containing only the navigation */
         header {
             background: #f4f4f4;
-            padding: 1rem 2rem;
-            text-align: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
+            gap: 25px;
+            max-width: 600px; /* Less width as requested */
+            margin: 0 auto;
         }
         nav a {
             text-decoration: none;
             color: #0056b3;
             font-weight: bold;
+            font-size: 1rem;
         }
+        nav a:hover {
+            color: #003d82;
+            text-decoration: underline;
+        }
+
+        /* Main layout container */
         .container {
-            max-width: 900px;
-            margin: 20px auto;
+            max-width: 1000px;
+            margin: 40px auto;
             padding: 0 20px;
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
         }
+
+        /* Sidebar on the left */
         .sidebar {
-            float: left;
-            width: 30%;
+            flex: 1;
+            max-width: 280px;
             background: #fafafa;
-            padding: 15px;
-            border-radius: 5px;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #eee;
         }
+        
+        /* Name and Title at the top of the sidebar */
+        .profile-header {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .profile-header h1 {
+            margin: 0 0 5px 0;
+            font-size: 1.8rem;
+            color: #222;
+        }
+        .profile-header p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+            color: #222;
+        }
+        .sidebar p {
+            margin: 10px 0;
+            font-size: 0.95rem;
+        }
+
+        /* Main content on the right */
         .main-content {
-            float: right;
-            width: 65%;
+            flex: 2;
+        }
+        section {
+            margin-bottom: 50px;
+            /* Prevents the sticky header from covering the section title when scrolling */
+            scroll-margin-top: 70px; 
+        }
+        section h2 {
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 8px;
+            color: #222;
+            margin-top: 0;
         }
         .news-item {
             margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
         }
         .date {
             font-weight: bold;
-            color: #666;
+            color: #0056b3;
+            margin-bottom: 5px;
         }
         .footer {
-            clear: both;
             text-align: center;
             padding: 20px;
             margin-top: 40px;
             background: #222;
             color: #fff;
+            font-size: 0.9rem;
         }
         a {
             color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>P. N. Karthik</h1>
-        <p>Assistant Professor, IIT Hyderabad</p>
         <nav>
-            <a href="#home">Home</a>
             <a href="#bio">Bio</a>
             <a href="#research">Research</a>
             <a href="#teaching">Teaching</a>
-            <a href="#blogs">Blogs</a>
+            <a href="#news">News</a>
         </nav>
     </header>
 
     <div class="container">
         <aside class="sidebar">
+            <div class="profile-header">
+                <h1>P. N. Karthik</h1>
+                <p>Assistant Professor, IIT Hyderabad</p>
+            </div>
+
             <h3>Connect</h3>
             <p>704/A, Academic Block C</p>
             <p><a href="mailto:someone@example.com">Email Me</a></p>
@@ -92,16 +162,28 @@
         </aside>
 
         <main class="main-content">
-            <section id="about">
+            <section id="bio">
                 <h2>About Me</h2>
                 <p>I am an Assistant Professor in the Department of Artificial Intelligence at the Indian Institute of Technology, Hyderabad (IIT Hyderabad). Prior to this, I was a Research Fellow in the Institute of Data Science at the National University of Singapore (NUS), where I worked alongside Prof. Vincent Y. F. Tan. Prior to joining NUS, I obtained the Ph.D. and Master of Science (Engineering) dual degree from the Department of Electrical Communication Engineering at the Indian Institute of Science (IISc), Bengaluru, where I was fortunate to be advised by Prof. Rajesh Sundaresan.</p>
                 <p>Much earlier to joining the dual degree programme, I worked as a Project Assistant in Prof. Chandra R. Murthy's lab at IISc, where I was introduced to the world of research. I hold a Bachelor of Engineering degree in Electronics and Communications from R V College of Engineering, Bengaluru.</p>
                 <p><em>Internship requests from students outside IIT Hyderabad are considered only if accompanied by a recommendation from a known academic acquaintance (such as a colleague or collaborator, either within or outside IIT Hyderabad). I may not respond to unsolicited requests for internships.</em></p>
             </section>
 
-            <section id="research-interests">
+            <section id="research">
                 <h2>Research Interests</h2>
                 <p>Multi-armed bandits, federated learning, differential privacy, reinforcement learning, information theory, statistics.</p>
+            </section>
+            
+            <section id="teaching">
+                <h2>Teaching</h2>
+                <div class="news-item">
+                    <p class="date">Feb - Apr 2026</p>
+                    <p>Teaching a 2-credit course on Programming for AI. Visit the course webpage for more details.</p>
+                </div>
+                <div class="news-item">
+                    <p class="date">Jan - Apr 2026</p>
+                    <p>Teaching a 3-credit course on Stochastic Processes. Visit the course webpage for more details.</p>
+                </div>
             </section>
 
             <section id="news">
@@ -110,7 +192,6 @@
                 <div class="news-item">
                     <p class="date">15 Apr 2026</p>
                     <p>Hosted Nihesh Rathod, Data Scientist, Strand Life Sciences (Bengaluru). Nihesh delivered an engaging talk on the topic "Whispers of Cancer: Listening to Early Signals of Cancer Through Machine Learning." Many thanks to Nihesh for accepting the invitation and visiting IIT Hyderabad.</p>
-                    <p><em>[photo-01] [photo-02] [photo-03]</em></p>
                 </div>
 
                 <div class="news-item">
@@ -121,53 +202,21 @@
                 <div class="news-item">
                     <p class="date">08 Apr 2026</p>
                     <p>Hosted Karthikeyan Shanmugam, Research Scientist, Google DeepMind India (Bengaluru). Karthikeyan delivered an engaging talk on the topic "Algorithms for Fine Tuning Diffusion Models through Rewards." Many thanks to Karthikeyan for accepting the invitation and visiting IIT Hyderabad.</p>
-                    <p><em>[photo-01] [photo-02]</em></p>
                 </div>
 
                 <div class="news-item">
                     <p class="date">01 Apr 2026</p>
-                    <p>Hosted Pratik Verma, Vice-President of Data Science at Netradyne Technology India Pvt Ltd. Pratik delivered an engaging talk on the topic "What It Takes to Make Edge Intelligence Work on Real Roads." Many thanks to Pratik for accepting the invitation and visiting IIT Hyderabad.</p>
-                    <p><em>[photo-01] [photo-02] [photo-03]</em></p>
-                </div>
-                
-                <div class="news-item">
-                    <p class="date">01 Apr 2026</p>
-                    <p>Coordinating a 1-credit course on Industry Lecture Series.</p>
+                    <p>Hosted Pratik Verma, Vice-President of Data Science at Netradyne Technology India Pvt Ltd. Pratik delivered an engaging talk on the topic "What It Takes to Make Edge Intelligence Work on Real Roads."</p>
                 </div>
 
                 <div class="news-item">
                     <p class="date">28 Mar 2026</p>
-                    <p>Paper on "Almost Asymptotically Optimal Active Clustering Through Pairwise Observations" accepted to ISIT 2026! Joint work with Rachel S. Y. Teo, Ramya Korlakai Vinayak, and Vincent Y. F. Tan. Congratulations to all the co-authors! <a href="#">[arxiv]</a></p>
-                </div>
-
-                <div class="news-item">
-                    <p class="date">26 Mar 2026</p>
-                    <p>Received approval for the project "AI Based Threat Analysis and Countermeasure Response Module" by the Defence Electronics Research Laboratory (DLRL), Hyderabad. Looking forward to working alongside Prof. Saketha Nath on this project. Many thanks to DLRL for the support. Hoping to contribute to the country's defence research efforts through this project.</p>
+                    <p>Paper on "Almost Asymptotically Optimal Active Clustering Through Pairwise Observations" accepted to ISIT 2026! Joint work with Rachel S. Y. Teo, Ramya Korlakai Vinayak, and Vincent Y. F. Tan. <a href="#">[arxiv]</a></p>
                 </div>
 
                 <div class="news-item">
                     <p class="date">20 Feb 2026</p>
-                    <p>Posted a paper on "Asymptotically Optimal Sequential Testing with Markovian Data." Joint work with Alhad Sethi, Kavali Sofia Sagar, Shubhada Agrawal, and Debabrota Basu. In this work, we consider the problem of sequential hypothesis testing with a single Markov data stream. We characterise the asymptotic sample complexity of identifying the true hypothesis up to a desired confidence level, where the asymptotics is as the error probability vanishes. <a href="#">[arxiv]</a></p>
-                </div>
-
-                <div class="news-item">
-                    <p class="date">06 Jan 2026</p>
-                    <p>Teaching a 2-credit course on Programming for AI during Feb-Apr 2026. Visit the course webpage for more details.</p>
-                </div>
-
-                <div class="news-item">
-                    <p class="date">06 Feb 2026</p>
-                    <p>Posted a paper on "Almost Asymptotically Optimal Active Clustering Through Pairwise Observations." Joint work with Rachel S. Y. Teo, Ramya Korlakai Vinayak, and Vincent Y. F. Tan. <a href="#">[arxiv]</a></p>
-                </div>
-
-                <div class="news-item">
-                    <p class="date">06 Jan 2026</p>
-                    <p>Teaching a 3-credit course on Stochastic Processes during Jan-Apr 2026. Visit the course webpage for more details.</p>
-                </div>
-
-                <div class="news-item">
-                    <p class="date">03 Apr 2025</p>
-                    <p>Honoured to receive the Faculty Teaching Excellence Award 2025 from IIT Hyderabad! I am immensely grateful to the incredible teachers who have shaped my learning since childhood and instilled in me the passion for teaching. More power to students who form the backbone of academia. <a href="#">[list-of-awardees]</a> <a href="#">[certificate]</a> <a href="#">[video]</a></p>
+                    <p>Posted a paper on "Asymptotically Optimal Sequential Testing with Markovian Data." Joint work with Alhad Sethi, Kavali Sofia Sagar, Shubhada Agrawal, and Debabrota Basu. <a href="#">[arxiv]</a></p>
                 </div>
 
             </section>
@@ -175,7 +224,7 @@
     </div>
 
     <footer class="footer">
-        <p>Credits: Srividya B V | &copy; 2023 Copyright: P. N. Karthik</p>
+        <p>Credits: Srividya B V | &copy; 2026 Copyright: P. N. Karthik</p>
     </footer>
 
 </body>
