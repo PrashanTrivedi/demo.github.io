@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P. N. Karthik</title>
+    <title>P. N. Karthik - Home</title>
     <style>
-        /* This makes the page glide smoothly when clicking navigation links */
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -17,8 +14,6 @@
             color: #333;
             background-color: #fff;
         }
-        
-        /* Slimmed down top header containing only the navigation */
         header {
             background: #f4f4f4;
             padding: 12px 0;
@@ -31,7 +26,7 @@
             display: flex;
             justify-content: center;
             gap: 25px;
-            max-width: 600px; /* Less width as requested */
+            max-width: 600px; 
             margin: 0 auto;
         }
         nav a {
@@ -44,8 +39,6 @@
             color: #003d82;
             text-decoration: underline;
         }
-
-        /* Main layout container */
         .container {
             max-width: 1000px;
             margin: 40px auto;
@@ -54,8 +47,6 @@
             gap: 40px;
             align-items: flex-start;
         }
-
-        /* Sidebar on the left */
         .sidebar {
             flex: 1;
             max-width: 280px;
@@ -64,84 +55,33 @@
             border-radius: 8px;
             border: 1px solid #eee;
         }
-        
-        /* Name and Title at the top of the sidebar */
         .profile-header {
             margin-bottom: 25px;
             padding-bottom: 20px;
             border-bottom: 2px solid #ddd;
         }
-        .profile-header h1 {
-            margin: 0 0 5px 0;
-            font-size: 1.8rem;
-            color: #222;
-        }
-        .profile-header p {
-            margin: 0;
-            font-size: 0.95rem;
-            color: #666;
-            font-style: italic;
-        }
-
-        .sidebar h3 {
-            margin-top: 0;
-            color: #222;
-        }
-        .sidebar p {
-            margin: 10px 0;
-            font-size: 0.95rem;
-        }
-
-        /* Main content on the right */
-        .main-content {
-            flex: 2;
-        }
-        section {
-            margin-bottom: 50px;
-            /* Prevents the sticky header from covering the section title when scrolling */
-            scroll-margin-top: 70px; 
-        }
-        section h2 {
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 8px;
-            color: #222;
-            margin-top: 0;
-        }
-        .news-item {
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px dashed #ccc;
-        }
-        .date {
-            font-weight: bold;
-            color: #0056b3;
-            margin-bottom: 5px;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            background: #222;
-            color: #fff;
-            font-size: 0.9rem;
-        }
-        a {
-            color: #0056b3;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+        .profile-header h1 { margin: 0 0 5px 0; font-size: 1.8rem; color: #222; }
+        .profile-header p { margin: 0; font-size: 0.95rem; color: #666; font-style: italic; }
+        .sidebar h3 { margin-top: 0; color: #222; }
+        .sidebar p { margin: 10px 0; font-size: 0.95rem; }
+        .main-content { flex: 2; }
+        section { margin-bottom: 50px; scroll-margin-top: 70px; }
+        section h2 { border-bottom: 2px solid #0056b3; padding-bottom: 8px; color: #222; margin-top: 0; }
+        .news-item { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; }
+        .date { font-weight: bold; color: #0056b3; margin-bottom: 5px; }
+        .footer { text-align: center; padding: 20px; margin-top: 40px; background: #222; color: #fff; font-size: 0.9rem; }
+        a { color: #0056b3; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
     <header>
         <nav>
-            <a href="#bio">Bio</a>
-            <a href="#research">Research</a>
-            <a href="#teaching">Teaching</a>
-            <a href="#news">News</a>
+            <a href="index.html">Bio</a>
+            <a href="research.html">Research</a>
+            <a href="index.html#teaching">Teaching</a>
+            <a href="index.html#news">News</a>
         </nav>
     </header>
 
@@ -151,7 +91,6 @@
                 <h1>P. N. Karthik</h1>
                 <p>Assistant Professor, IIT Hyderabad</p>
             </div>
-
             <h3>Connect</h3>
             <p>704/A, Academic Block C</p>
             <p><a href="mailto:someone@example.com">Email Me</a></p>
@@ -164,14 +103,8 @@
         <main class="main-content">
             <section id="bio">
                 <h2>About Me</h2>
-                <p>I am an Assistant Professor in the Department of Artificial Intelligence at the Indian Institute of Technology, Hyderabad (IIT Hyderabad). Prior to this, I was a Research Fellow in the Institute of Data Science at the National University of Singapore (NUS), where I worked alongside Prof. Vincent Y. F. Tan. Prior to joining NUS, I obtained the Ph.D. and Master of Science (Engineering) dual degree from the Department of Electrical Communication Engineering at the Indian Institute of Science (IISc), Bengaluru, where I was fortunate to be advised by Prof. Rajesh Sundaresan.</p>
-                <p>Much earlier to joining the dual degree programme, I worked as a Project Assistant in Prof. Chandra R. Murthy's lab at IISc, where I was introduced to the world of research. I hold a Bachelor of Engineering degree in Electronics and Communications from R V College of Engineering, Bengaluru.</p>
-                <p><em>Internship requests from students outside IIT Hyderabad are considered only if accompanied by a recommendation from a known academic acquaintance (such as a colleague or collaborator, either within or outside IIT Hyderabad). I may not respond to unsolicited requests for internships.</em></p>
-            </section>
-
-            <section id="research">
-                <h2>Research Interests</h2>
-                <p>Multi-armed bandits, federated learning, differential privacy, reinforcement learning, information theory, statistics.</p>
+                <p>I am an Assistant Professor in the Department of Artificial Intelligence at the Indian Institute of Technology, Hyderabad (IIT Hyderabad)...</p>
+                <p><em>Internship requests from students outside IIT Hyderabad are considered only if accompanied by a recommendation...</em></p>
             </section>
             
             <section id="teaching">
@@ -180,45 +113,14 @@
                     <p class="date">Feb - Apr 2026</p>
                     <p>Teaching a 2-credit course on Programming for AI. Visit the course webpage for more details.</p>
                 </div>
-                <div class="news-item">
-                    <p class="date">Jan - Apr 2026</p>
-                    <p>Teaching a 3-credit course on Stochastic Processes. Visit the course webpage for more details.</p>
-                </div>
             </section>
 
             <section id="news">
                 <h2>News (Archived)</h2>
-
                 <div class="news-item">
                     <p class="date">15 Apr 2026</p>
-                    <p>Hosted Nihesh Rathod, Data Scientist, Strand Life Sciences (Bengaluru). Nihesh delivered an engaging talk on the topic "Whispers of Cancer: Listening to Early Signals of Cancer Through Machine Learning." Many thanks to Nihesh for accepting the invitation and visiting IIT Hyderabad.</p>
+                    <p>Hosted Nihesh Rathod, Data Scientist, Strand Life Sciences (Bengaluru)...</p>
                 </div>
-
-                <div class="news-item">
-                    <p class="date">11 Apr 2026</p>
-                    <p>Honored to receive the ANRF Prime Minister Early Career Research Grant (PMECRG). Immensely grateful to ANRF for the kind support. Look forward to the opportunities this grant will bring.</p>
-                </div>
-
-                <div class="news-item">
-                    <p class="date">08 Apr 2026</p>
-                    <p>Hosted Karthikeyan Shanmugam, Research Scientist, Google DeepMind India (Bengaluru). Karthikeyan delivered an engaging talk on the topic "Algorithms for Fine Tuning Diffusion Models through Rewards." Many thanks to Karthikeyan for accepting the invitation and visiting IIT Hyderabad.</p>
-                </div>
-
-                <div class="news-item">
-                    <p class="date">01 Apr 2026</p>
-                    <p>Hosted Pratik Verma, Vice-President of Data Science at Netradyne Technology India Pvt Ltd. Pratik delivered an engaging talk on the topic "What It Takes to Make Edge Intelligence Work on Real Roads."</p>
-                </div>
-
-                <div class="news-item">
-                    <p class="date">28 Mar 2026</p>
-                    <p>Paper on "Almost Asymptotically Optimal Active Clustering Through Pairwise Observations" accepted to ISIT 2026! Joint work with Rachel S. Y. Teo, Ramya Korlakai Vinayak, and Vincent Y. F. Tan. <a href="#">[arxiv]</a></p>
-                </div>
-
-                <div class="news-item">
-                    <p class="date">20 Feb 2026</p>
-                    <p>Posted a paper on "Asymptotically Optimal Sequential Testing with Markovian Data." Joint work with Alhad Sethi, Kavali Sofia Sagar, Shubhada Agrawal, and Debabrota Basu. <a href="#">[arxiv]</a></p>
-                </div>
-
             </section>
         </main>
     </div>
