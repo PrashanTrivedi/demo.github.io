@@ -13,7 +13,7 @@ const myHeader = `
 // 2. Define the Sidebar HTML
 const mySidebar = `
     <aside class="sidebar">
-        <img src="profile.jpg" alt="P. N. Karthik Photo" class="profile-photo">
+        <img src="profile-pic.jpg" alt="Prashant Photo" class="profile-photo">
         <div class="profile-header">
             <h1>Prashant Trivedi</h1>
             <p>Assistant Professor, BITS Pilani, Rajasthan</p>
