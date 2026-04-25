@@ -1,4 +1,4 @@
-// 1. Define the Navigation Links (No <header> wrapper)
+// 1. Define the Navigation Links
 const myHeader = `
     <nav>
         <a href="index.html">Home</a>
@@ -9,7 +9,7 @@ const myHeader = `
     </nav>
 `;
 
-// 2. Define the Sidebar Content (No <aside> wrapper)
+// 2. Define the Sidebar Content
 const mySidebar = `
     <img src="profile-pic.jpg" alt="Prashant Photo" class="profile-photo">
     <div class="profile-header">
