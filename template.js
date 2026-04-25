@@ -1,4 +1,4 @@
-// 1. Define the Navigation Links
+// 1. Define the Navigation Links (No <header> wrapper)
 const myHeader = `
     <nav>
         <a href="index.html">Bio</a>
@@ -8,7 +8,7 @@ const myHeader = `
     </nav>
 `;
 
-// 2. Define the Sidebar Content
+// 2. Define the Sidebar Content (No <aside> wrapper)
 const mySidebar = `
     <img src="profile-pic.jpg" alt="Prashant Photo" class="profile-photo">
     <div class="profile-header">
