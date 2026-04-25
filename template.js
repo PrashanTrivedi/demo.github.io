@@ -20,10 +20,8 @@ const mySidebar = `
         </div>
         
         <h3>Connect</h3>
-        <p>6121-V New Academic Block
-
+        <p>6121-V New Academic Block<br>
         Department of Computer Science and Information System
-        
         </p>
         <p><a href="mailto:someone@example.com">Email Me</a></p>
         <p><a href="#">My LinkedIn</a></p>
@@ -33,6 +31,6 @@ const mySidebar = `
     </aside>
 `;
 
-// 3. Inject them into the page
-document.getElementById("header-placeholder").innerHTML = myHeader;
-document.getElementById("sidebar-placeholder").innerHTML = mySidebar;
+// 3. Inject them into the page (USE outerHTML INSTEAD OF innerHTML)
+document.getElementById("header-placeholder").outerHTML = myHeader;
+document.getElementById("sidebar-placeholder").outerHTML = mySidebar;
