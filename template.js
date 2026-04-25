@@ -2,7 +2,6 @@
 const myHeader = `
     <nav>
         <a href="index.html">Home</a>
-        <a href="bio.html">Bio</a>
         <a href="research.html">Research</a>
         <a href="teaching.html">Teaching</a>
         <a href="index.html#news">News</a>
